@@ -48,6 +48,7 @@
                 <p style="color: darkblue">  We Are Idrak Company We Here To Provide u With Sollutions For Ur Problems We Make Mobile Applications + Website Application  Contact Us</p>
 
                 <a href="{{ route('getContactUs') }}"  class="text-center font-semibold" style="color: darkblue; font-size: larger"> Contact Us</a>
+                <a href="{{ route('getProducts') }}"  class="text-center font-semibold" style="color: darkblue; font-size: larger"> Products</a>
 
             </div>
         </div>

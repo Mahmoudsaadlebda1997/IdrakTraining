@@ -1,4 +1,4 @@
-get<?php
+<?php
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
@@ -22,7 +22,12 @@ Route::get('/home', [HomeController::class, 'index'])->name('getHome');
 Route::get('/contactUs', [HomeController::class, 'contactUs'])->name('getContactUs');
 //Products
 Route::post('/storeProduct', [ProductController::class, 'store'])->name('storeProduct');
+//To Update
+Route::post('/updateProduct/{id}', [ProductController::class, 'update'])->name('updateProduct');
+Route::get('/updateProduct/{id}', [ProductController::class, 'edit'])->name('editProduct');
+//To Create
 Route::get('/createProduct', [ProductController::class, 'create'])->name('createProduct');
 Route::get('/products', [ProductController::class, 'index'])->name('getProducts');
 
-
+//To Delete
+Route::get('/products/{id}', [ProductController::class, 'delete'])->name('deleteProduct');

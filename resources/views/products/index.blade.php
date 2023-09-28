@@ -57,6 +57,7 @@
         <td>{{$product->created_at}}</td>
         <td>{{$product->updated_at}}</td>
         <td><a href='{{ route("editProduct",$product->id) }}'  class="text-center font-semibold" style="color: blue; font-size: larger"> Edit</a>
+        <td><a href='{{ route("showProduct",$product->id) }}'  class="text-center font-semibold" style="color: blue; font-size: larger"> Show</a>
         <td><a href='{{ route("deleteProduct",$product->id) }}'  class="text-center font-semibold" style="color: red; font-size: larger"> Delete</a>
         </td>
     </tr>

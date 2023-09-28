@@ -56,34 +56,13 @@
 </head>
 
 <body>
-<h2>Create Product</h2>
-<form action="{{ route('storeProduct') }}" method="POST">
-        @csrf
-    <div class="input">
-        <label>Product Name</label>
-        <input
-               type="text"
-               name="name"
-               max="30"
-               required
-               value="">
-    </div>
+<h2>Show Product</h2>
+    Product Name :
+    <h4>{{$product->name}}</h4>
+    <div> Product Price:
+        <h4>{{$product->price}}</h4>
 
-    <div class="input">
-        <label>Product Price</label>
-        <input
-               type="number"
-               name="price"
-               required
-               max="30"
-               min="0"
-               value="">
     </div>
-    <div class="buttons">
-        <input type="submit" value="Submit">
-    </div>
-</form>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

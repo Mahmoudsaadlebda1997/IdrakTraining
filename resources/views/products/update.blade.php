@@ -64,7 +64,10 @@
         <input
                type="text"
                name="name"
+               required
+               max="30"
                value={{$product->name}}>
+
     </div>
 
     <div class="input">
@@ -72,6 +75,9 @@
         <input
                type="number"
                name="price"
+               min="9"
+               required
+               max="30"
                value={{$product->price}}>
     </div>
     <div class="buttons">
